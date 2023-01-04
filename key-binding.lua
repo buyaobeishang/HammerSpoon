@@ -15,13 +15,13 @@ local function windowBind(hyper, keyFuncTable)
 end
 
 -- * Move window to screen
-windowBind({"ctrl", "alt"}, {
+windowBind({"", "cmd"}, {
   left = wm.throwLeft,
   right = wm.throwRight
 })
 
 -- * Set Window Position on screen
-windowBind({"ctrl", "alt", "cmd"}, {
+windowBind({"", "alt", "cmd"}, {
   m = wm.maximizeWindow,    -- ⌃⌥⌘ + M
   c = wm.centerOnScreen,    -- ⌃⌥⌘ + C
   left = wm.leftHalf,       -- ⌃⌥⌘ + ←
@@ -30,7 +30,7 @@ windowBind({"ctrl", "alt", "cmd"}, {
   down = wm.bottomHalf      -- ⌃⌥⌘ + ↓
 })
 -- * Set Window Position on screen
-windowBind({"ctrl", "alt", "shift"}, {
+windowBind({"", "alt", ""}, {
   left = wm.rightToLeft,      -- ⌃⌥⇧ + ←
   right = wm.rightToRight,    -- ⌃⌥⇧ + →
   up = wm.bottomUp,           -- ⌃⌥⇧ + ↑
@@ -46,6 +46,6 @@ windowBind({"alt", "cmd", "shift"}, {
 
 -- * Windows-like cycle
 windowBind({"ctrl", "alt", "cmd"}, {
-  u = wm.cycleLeft,          -- ⌃⌥⌘ + u
-  i = wm.cycleRight          -- ⌃⌥⌘ + i
+  left = wm.cycleLeft,          -- ⌃⌥⌘ + u
+  right = wm.cycleRight          -- ⌃⌥⌘ + i
 })

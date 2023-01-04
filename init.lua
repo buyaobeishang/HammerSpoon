@@ -15,7 +15,7 @@
 -- -----------------------------------------------------------------------
 require "window-management"
 require "vox-control"
-require "vim-binding"
+-- require "vim-binding"
 require "key-binding"
 
 -- -----------------------------------------------------------------------
@@ -39,4 +39,4 @@ hs.pathwatcher.new(os.getenv("HOME") .. "/.hammerspoon/", reloadConfig):start()
 hs.hotkey.bind({"cmd", "alt", "ctrl"}, "n", function()
   hs.reload()
 end)
-hs.alert.show("Config loaded")
+hs.alert.show("直到世界尽头😈")
