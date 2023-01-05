@@ -21,6 +21,7 @@ applist = {
 
 fnutils.each(applist, function(entry)
     hotkey.bind({'', 'cmd', 'shift'}, entry.shortcut, entry.appname, function()
+        -- 单次调出
         -- application.launchOrFocus(entry.appname)
         toggle_application(entry.appname)
     end)

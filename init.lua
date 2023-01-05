@@ -16,6 +16,7 @@
 require "window-management"
 require "hotkey"
 require "key-binding"
+-- require "vox-control"
 -- require "vim-binding"
 
 -- -----------------------------------------------------------------------
